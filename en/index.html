@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live Translation — screen translator</title>
+<meta name="description" content="A screen translator for games, YouTube and Windows apps: reads foreign text on screen and shows the translation right on top of it. Works offline.">
+<style>
+  :root {
+    --arka: #14141c; --kart: #1f1f2a; --yazi: #ececf2; --soluk: #a3a3b6; --vurgu: #7c6cff; --cizgi: #2c2c3a;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--arka); color: var(--yazi);
+         font: 17px/1.6 "Segoe UI", system-ui, -apple-system, sans-serif; }
+  .ic { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 72px 0 48px; }
+  .ad { color: var(--vurgu); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; font-size: 14px; }
+  h1 { font-size: clamp(30px, 6vw, 48px); line-height: 1.15; margin: 12px 0 16px; }
+  .alt { color: var(--soluk); font-size: 19px; max-width: 640px; margin: 0; }
+  .dugmeler { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+  .dugme { display: inline-block; padding: 12px 20px; border-radius: 10px; text-decoration: none; font-weight: 600; }
+  .dolu { background: var(--vurgu); color: #fff; }
+  .bos { border: 1px solid var(--cizgi); color: var(--yazi); }
+  .not { color: var(--soluk); font-size: 14px; margin-top: 12px; }
+  section { padding: 40px 0; border-top: 1px solid var(--cizgi); }
+  h2 { font-size: 24px; margin: 0 0 20px; }
+  .izgara { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .kart { background: var(--kart); border-radius: 12px; padding: 20px; }
+  .kart h3 { margin: 0 0 8px; font-size: 18px; }
+  .kart p { margin: 0; color: var(--soluk); }
+  kbd { background: var(--arka); border: 1px solid var(--cizgi); border-radius: 5px; padding: 1px 6px; font-size: 14px; }
+  ul { padding-left: 20px; } li { margin: 6px 0; }
+  .fiyat { font-size: 32px; font-weight: 700; }
+  footer { padding: 32px 0 48px; color: var(--soluk); font-size: 14px; border-top: 1px solid var(--cizgi); }
+  footer a, section a { color: var(--yazi); }
+</style>
+</head>
+<body>
+<div class="ic">
+  <header>
+    <div class="ad">Live Translation</div>
+    <h1>Foreign text, translated right where it is.</h1>
+    <p class="alt">A screen translator for games, YouTube and Windows apps. It reads the text on your screen and puts the translation on top of it. Works offline.</p>
+    <div class="dugmeler">
+      <a class="dugme dolu" href="#get">Coming soon: Steam and Microsoft Store</a>
+      <a class="dugme bos" href="../gizlilik">Privacy</a>
+      <a class="dugme bos" href="../">Türkçe</a>
+    </div>
+    <p class="not">Windows 10 / 11 · 4.99 USD, one-time</p>
+  </header>
+
+  <section>
+    <h2>What it translates</h2>
+    <div class="izgara">
+      <div class="kart"><h3>Games</h3><p>Dialogue, subtitles and menus. The program recognises each game and remembers it; it also works in the PlayStation Remote Play window.</p></div>
+      <div class="kart"><h3>YouTube</h3><p>With the free Chrome extension, subtitles are translated in sync with the video: while seeking, paused, in full screen.</p></div>
+      <div class="kart"><h3>Windows apps</h3><p>Menus and buttons in a foreign language show their translation on top. One switch in the panel.</p></div>
+      <div class="kart"><h3>Read from screen</h3><p>Press <kbd>Ctrl</kbd> + <kbd>F6</kbd> and draw a box: text in an image, PDF or photo is translated instantly.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Your privacy stays with you</h2>
+    <ul>
+      <li>Text recognition runs on your computer; your screenshots are never sent anywhere.</li>
+      <li>With "Local model only", translation runs on your computer too and works with the internet off.</li>
+      <li>Messaging apps, notifications and the lock screen are never read.</li>
+      <li>Text of regular apps and "Read from screen" never goes online and is never written to disk.</li>
+    </ul>
+    <p>Details: <a href="../gizlilik">Privacy Policy</a> · <a href="../kullanim-sartlari">Terms of Use</a> (English below the Turkish text)</p>
+  </section>
+
+  <section>
+    <h2>Languages</h2>
+    <p><strong>Into Turkish:</strong> English, German, French, Spanish, Italian, Portuguese, Indonesian, Russian, Arabic, Chinese, Korean.</p>
+    <p><strong>From Turkish:</strong> English, German, French, Spanish, Italian, Portuguese, Indonesian, Russian, Arabic, Chinese.</p>
+    <p class="not">Every language pair is measured before it is listed. Translation into English from other languages and an English interface are in preparation.</p>
+  </section>
+
+  <section id="get">
+    <h2>Price and download</h2>
+    <p class="fiyat">4.99 USD</p>
+    <p>One-time payment. The Steam and Microsoft Store pages are being prepared; links will appear here.</p>
+    <p class="not">Coming later: read translations aloud (separate add-on).</p>
+  </section>
+
+  <footer>
+    Live Translation (Canlı Çeviri) · Uygun Yazılım ·
+    Support: <a href="mailto:zeynepuygun.339@gmail.com">zeynepuygun.339@gmail.com</a> ·
+    <a href="../gizlilik">Privacy</a> · <a href="../kullanim-sartlari">Terms</a>
+  </footer>
+</div>
+</body>
+</html>
