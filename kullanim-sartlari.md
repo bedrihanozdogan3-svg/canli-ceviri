@@ -5,7 +5,7 @@ title: Kullanım Şartları — Canlı Çeviri
 <!-- surum: 2026-11-05 -->
 # Canlı Çeviri — Kullanım Şartları
 
-Sürüm 2026-11-05 · Yayımcı: **Uygun Yazılım** · İletişim: [GitHub destek sayfası](https://github.com/bedrihanozdogan3-svg/canli-ceviri/issues)
+Sürüm 2026-11-05 · Yayımcı: **Uygun Yazılım** · İletişim: **zeynepuygun.339@gmail.com**
 
 Programı kurarak ya da ilk açılışta "Kabul ediyorum"u seçerek bu şartları ve **Gizlilik Politikası**'nı (GIZLILIK.md) kabul
 etmiş olursunuz. Kabul etmezseniz program çalışmaz; satın aldığınız yerin iade kurallarına göre iade isteyebilirsiniz.
@@ -56,7 +56,7 @@ uyuşmazlıklarında kanunun gösterdiği tüketici hakem heyetleri ve mahkemele
 
 # Live Translation (Canlı Çeviri) — Terms of Use
 
-Version 2026-11-05 · Publisher: **Uygun Yazılım** · Contact: [GitHub support page](https://github.com/bedrihanozdogan3-svg/canli-ceviri/issues)
+Version 2026-11-05 · Publisher: **Uygun Yazılım** · Contact: **zeynepuygun.339@gmail.com**
 
 By installing the program or choosing "I accept" at first start you accept these terms and the **Privacy Policy**. If you do
 not accept, the program does not run; you may request a refund under the rules of the store you bought it from.

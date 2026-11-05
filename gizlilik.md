@@ -5,7 +5,7 @@ title: Gizlilik Politikası — Canlı Çeviri
 <!-- surum: 2026-11-05.2 -->
 # Canlı Çeviri — Gizlilik Politikası
 
-Sürüm 2026-11-05.2 · Yayımcı: **Uygun Yazılım** · İletişim: [GitHub destek sayfası](https://github.com/bedrihanozdogan3-svg/canli-ceviri/issues)
+Sürüm 2026-11-05.2 · Yayımcı: **Uygun Yazılım** · İletişim: **zeynepuygun.339@gmail.com**
 
 Bu metin Canlı Çeviri programının bilgisayarınızda neyi okuduğunu, neyi sakladığını ve neyin bilgisayarınızdan çıktığını anlatır.
 Programın davranışı bu metinle sınırlıdır; metin değişirse program açılışta yeniden onayınızı ister.
@@ -89,14 +89,14 @@ sözlük sunucusu için kendi istek kaydı da kapalıdır.
 ## 4. Haklarınız
 
 6698 sayılı KVKK ve (Avrupa Birliği'ndeyseniz) GDPR kapsamındaki haklarınız (bilgi isteme, düzeltme, silme, itiraz) için
-[GitHub destek sayfası](https://github.com/bedrihanozdogan3-svg/canli-ceviri/issues) adresine yazabilirsiniz. Ortak sözlüğe giden kayıtlar kimliğinizle eşleştirilemediği için tek
+**zeynepuygun.339@gmail.com** adresine yazabilirsiniz. Ortak sözlüğe giden kayıtlar kimliğinizle eşleştirilemediği için tek
 tek bulunamayabilir; paylaşımı kapatmak gönderimi hemen durdurur. Program 13 yaşından küçükler için tasarlanmamıştır.
 
 ---
 
 # Live Translation (Canlı Çeviri) — Privacy Policy
 
-Version 2026-11-05.2 · Publisher: **Uygun Yazılım** · Contact: [GitHub support page](https://github.com/bedrihanozdogan3-svg/canli-ceviri/issues)
+Version 2026-11-05.2 · Publisher: **Uygun Yazılım** · Contact: **zeynepuygun.339@gmail.com**
 
 This explains what the program reads on your computer, what it stores, and what leaves your computer. If this text changes,
 the program asks for your consent again at start-up.
@@ -146,5 +146,5 @@ screens per game) so known screens are translated instantly; and the program's l
 
 ## 4. Your rights
 For requests under Turkish KVKK or the EU GDPR (access, correction, deletion, objection) write to
-[GitHub support page](https://github.com/bedrihanozdogan3-svg/canli-ceviri/issues). Shared-dictionary records cannot be linked to you and may not be individually findable;
+**zeynepuygun.339@gmail.com**. Shared-dictionary records cannot be linked to you and may not be individually findable;
 turning sharing off stops sending immediately. The program is not intended for children under 13.
