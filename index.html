@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Canlı Çeviri — ekran çevirmeni</title>
+<meta name="description" content="Oyun, YouTube ve Windows programlarındaki yabancı yazıyı olduğu yerde Türkçeye çeviren ekran çevirmeni. İnternetsiz çalışabilir.">
+<style>
+  :root {
+    --arka: #14141c; --kart: #1f1f2a; --yazi: #ececf2; --soluk: #a3a3b6; --vurgu: #7c6cff; --cizgi: #2c2c3a;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--arka); color: var(--yazi);
+         font: 17px/1.6 "Segoe UI", system-ui, -apple-system, sans-serif; }
+  .ic { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 72px 0 48px; }
+  .ad { color: var(--vurgu); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; font-size: 14px; }
+  h1 { font-size: clamp(30px, 6vw, 48px); line-height: 1.15; margin: 12px 0 16px; }
+  .alt { color: var(--soluk); font-size: 19px; max-width: 640px; margin: 0; }
+  .dugmeler { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+  .dugme { display: inline-block; padding: 12px 20px; border-radius: 10px; text-decoration: none; font-weight: 600; }
+  .dolu { background: var(--vurgu); color: #fff; }
+  .bos { border: 1px solid var(--cizgi); color: var(--yazi); }
+  .not { color: var(--soluk); font-size: 14px; margin-top: 12px; }
+  section { padding: 40px 0; border-top: 1px solid var(--cizgi); }
+  h2 { font-size: 24px; margin: 0 0 20px; }
+  .izgara { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .kart { background: var(--kart); border-radius: 12px; padding: 20px; }
+  .kart h3 { margin: 0 0 8px; font-size: 18px; }
+  .kart p { margin: 0; color: var(--soluk); }
+  kbd { background: var(--arka); border: 1px solid var(--cizgi); border-radius: 5px; padding: 1px 6px; font-size: 14px; }
+  ul { padding-left: 20px; } li { margin: 6px 0; }
+  .fiyat { font-size: 32px; font-weight: 700; }
+  footer { padding: 32px 0 48px; color: var(--soluk); font-size: 14px; border-top: 1px solid var(--cizgi); }
+  footer a, section a { color: var(--yazi); }
+</style>
+</head>
+<body>
+<div class="ic">
+  <header>
+    <div class="ad">Canlı Çeviri</div>
+    <h1>Yabancı dildeki yazı, olduğu yerde Türkçe.</h1>
+    <p class="alt">Oyun, YouTube ve Windows programları için ekran çevirmeni. Ekrandaki yazıyı okur, çevirisini yazının üstüne koyar. İnternetsiz çalışabilir.</p>
+    <div class="dugmeler">
+      <a class="dugme dolu" href="#indir">Yakında: Steam ve Microsoft Store</a>
+      <a class="dugme bos" href="gizlilik">Gizlilik</a>
+    </div>
+    <p class="not">Windows 10 / 11 · 4,99 USD, tek seferlik</p>
+  </header>
+
+  <section>
+    <h2>Neleri çevirir</h2>
+    <div class="izgara">
+      <div class="kart"><h3>Oyunlar</h3><p>Diyalog, altyazı ve menüler. Program oyunu tanır ve hatırlar; PlayStation Remote Play penceresinde de çalışır.</p></div>
+      <div class="kart"><h3>YouTube</h3><p>Ücretsiz Chrome eklentisiyle altyazı videoyla aynı anda çevrilir: sararken, durdururken, tam ekranda.</p></div>
+      <div class="kart"><h3>Windows programları</h3><p>Yabancı dildeki menüler ve düğmeler, üstlerinde Türkçe görünür. Panelde tek anahtarla açılır.</p></div>
+      <div class="kart"><h3>Ekrandan oku</h3><p><kbd>Ctrl</kbd> + <kbd>F6</kbd> ile ekranda bir kutu çiz: resim, PDF ya da fotoğraftaki yazı o anda çevrilir.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Gizlilik senin elinde</h2>
+    <ul>
+      <li>Yazı okuma bilgisayarında yapılır; ekran görüntün hiçbir yere gönderilmez.</li>
+      <li>"Yalnız yerel" ayarında çeviri de bilgisayarında yapılır, internet kapalıyken de çalışır.</li>
+      <li>Mesajlaşma programları, bildirimler ve kilit ekranı hiç okunmaz.</li>
+      <li>Program yazıları ve "Ekrandan oku" ile seçilen yazı internete gitmez, diske kaydedilmez.</li>
+    </ul>
+    <p>Ayrıntı: <a href="gizlilik">Gizlilik Politikası</a> · <a href="kullanim-sartlari">Kullanım Şartları</a></p>
+  </section>
+
+  <section>
+    <h2>Diller</h2>
+    <p><strong>Türkçeye:</strong> İngilizce, Almanca, Fransızca, İspanyolca, İtalyanca, Portekizce, Endonezce, Rusça, Arapça, Çince, Korece.</p>
+    <p><strong>Türkçeden:</strong> İngilizce, Almanca, Fransızca, İspanyolca, İtalyanca, Portekizce, Endonezce, Rusça, Çince.</p>
+    <p class="not">Her dil ölçüldü; puanı düşük çıkan diller listeye alınmadı.</p>
+  </section>
+
+  <section id="indir">
+    <h2>Fiyat ve indirme</h2>
+    <p class="fiyat">4,99 USD</p>
+    <p>Tek seferlik ödeme. Steam ve Microsoft Store sayfaları hazırlanıyor; açılınca bağlantılar burada olacak.</p>
+    <p class="not">Yakında: çeviriyi sesli okuma.</p>
+  </section>
+
+  <footer>
+    Canlı Çeviri · Uygun Yazılım ·
+    <a href="https://github.com/bedrihanozdogan3-svg/canli-ceviri/issues">İletişim ve destek</a> ·
+    <a href="gizlilik">Gizlilik</a> · <a href="kullanim-sartlari">Kullanım Şartları</a>
+  </footer>
+</div>
+</body>
+</html>
