@@ -2,10 +2,10 @@
 title: Gizlilik Politikası — Canlı Çeviri
 ---
 
-<!-- surum: 2026-11-05.2 -->
+<!-- surum: 2026-11-05.3 -->
 # Canlı Çeviri — Gizlilik Politikası
 
-Sürüm 2026-11-05.2 · Yayımcı: **Uygun Yazılım** · İletişim: **zeynepuygun.339@gmail.com**
+Sürüm 2026-11-05.3 · Yayımcı: **Uygun Yazılım** · İletişim: **zeynepuygun.339@gmail.com**
 
 Bu metin Canlı Çeviri programının bilgisayarınızda neyi okuduğunu, neyi sakladığını ve neyin bilgisayarınızdan çıktığını anlatır.
 Programın davranışı bu metinle sınırlıdır; metin değişirse program açılışta yeniden onayınızı ister.
@@ -39,7 +39,8 @@ Hepsi program klasöründeki `veri` klasöründedir; programı kaldırsanız da 
 
 ### 3.1 "Çeviri: yalnız yerel model (internetsiz)" ayarı
 Bu ayarda **hiçbir yazı bilgisayarınızdan çıkmaz**: çeviri servisine istek, ortak sözlük gönderimi ya da indirmesi yapılmaz.
-Yalnız siz istediğinizde program güncellemesi ve dil modeli indirmesi yapılır (3.4).
+Yalnız siz istediğinizde program güncellemesi ve dil modeli indirmesi, bir de anahtarla alınan sürümde lisans
+doğrulaması yapılır (3.4).
 
 ### 3.2 "Önce yerel, sonra internetle iyileşir" (varsayılan) ve "Yalnız internet" ayarları
 - Bilgisayardaki çeviri yetersiz kaldığında ya da o dil için bilgisayarda model yoksa, çevrilecek **yazı** (ekrandan okunan
@@ -80,8 +81,9 @@ sözlük sunucusu için kendi istek kaydı da kapalıdır.
 
 ### 3.4 Güncelleme, dil modeli, lisans
 - Program güncellemesi ve dil modeli indirmesi: yalnız indirme yapılır; yazınız gönderilmez.
-- Lisans etkinleştirme (mağaza dışı satışlarda, bir kez): lisans anahtarınız ve bilgisayarınızın adı satış altyapısına
-  (Lemon Squeezy) gönderilir. Steam sürümünde sahiplik Steam'in kendi yazılımıyla denetlenir.
+- Lisans (mağaza dışı satışlarda): etkinleştirirken ve ayda bir doğrulamak için (iade edilen anahtar kapansın diye)
+  lisans anahtarınız ve rastgele bir cihaz adı (bilgisayarınızın adı değil) satış altyapısına
+  (Lemon Squeezy) gönderilir; "Yalnız yerel" ayarında da. Bağlantı yoksa program açık kalır. Steam sürümünde sahiplik Steam'in kendi yazılımıyla denetlenir.
 - Chrome eklentisi yalnız bu bilgisayardaki programla konuşur (127.0.0.1); dışarı bir şey göndermez.
 - Dublaj (videonun sesli çevirisi) bu sürümde yoktur. Eklendiğinde izlediğiniz videonun sesi YouTube'dan indirilir; bu
   metin güncellenir ve onayınız yeniden istenir.
@@ -96,7 +98,7 @@ tek bulunamayabilir; paylaşımı kapatmak gönderimi hemen durdurur. Program 13
 
 # Live Translation (Canlı Çeviri) — Privacy Policy
 
-Version 2026-11-05.2 · Publisher: **Uygun Yazılım** · Contact: **zeynepuygun.339@gmail.com**
+Version 2026-11-05.3 · Publisher: **Uygun Yazılım** · Contact: **zeynepuygun.339@gmail.com**
 
 This explains what the program reads on your computer, what it stores, and what leaves your computer. If this text changes,
 the program asks for your consent again at start-up.
@@ -120,7 +122,7 @@ screens per game) so known screens are translated instantly; and the program's l
 
 ## 3. What leaves your computer
 - **"Local model only (offline)" setting:** no text leaves your computer — no translation service, no shared dictionary. Only
-  updates and language-model downloads you start.
+  updates and language-model downloads you start, and the monthly licence check of key-activated copies.
 - **"Local first, improved online" (default) and "Internet only" settings:** when local translation is weak or no local model exists for a language, the
   **text** to translate (game / video / document text, transcribed speech) is sent to the **MyMemory** translation service
   (Translated srl, Italy). Only text and the language pair are sent — no screenshots, audio, identity or account data. Daily
@@ -139,8 +141,9 @@ screens per game) so known screens are translated instantly; and the program's l
   data; the data is non-identifying usage data (game menu texts and translations) and can be turned off at any time.
   A translation enters the shared dictionary only when it arrives identically from at least 3 installs and 3 networks.
   The hosting provider's (Google Cloud) own request log for the dictionary server is switched off too.
-- **Updates, language models, licence:** downloads only. Licence activation (non-store sales, once) sends your licence key
-  and computer name to Lemon Squeezy; on Steam, ownership is checked by Steam. The Chrome extension talks only to the
+- **Updates, language models, licence:** downloads only. Licence (non-store sales): on activation and once a month (so that a
+  refunded key is switched off) your licence key and a random device name (not your computer's name) are sent to Lemon
+  Squeezy, also in "Local model only"; without a connection the program stays open; on Steam, ownership is checked by Steam. The Chrome extension talks only to the
   program on this computer (127.0.0.1). Dubbing (spoken translation of videos) is not in this version; when added,
   the audio of the video you watch is downloaded from YouTube and this policy is updated.
 
