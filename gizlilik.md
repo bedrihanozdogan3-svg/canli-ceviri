@@ -2,10 +2,10 @@
 title: Gizlilik Politikası — Canlı Çeviri
 ---
 
-<!-- surum: 2026-11-05 -->
+<!-- surum: 2026-11-05.2 -->
 # Canlı Çeviri — Gizlilik Politikası
 
-Sürüm 2026-11-05 · Yayımcı: **Uygun Yazılım** · İletişim: [GitHub destek sayfası](https://github.com/bedrihanozdogan3-svg/canli-ceviri/issues)
+Sürüm 2026-11-05.2 · Yayımcı: **Uygun Yazılım** · İletişim: [GitHub destek sayfası](https://github.com/bedrihanozdogan3-svg/canli-ceviri/issues)
 
 Bu metin Canlı Çeviri programının bilgisayarınızda neyi okuduğunu, neyi sakladığını ve neyin bilgisayarınızdan çıktığını anlatır.
 Programın davranışı bu metinle sınırlıdır; metin değişirse program açılışta yeniden onayınızı ister.
@@ -15,7 +15,12 @@ Programın davranışı bu metinle sınırlıdır; metin değişirse program aç
 - **Ekran:** Çeviri açıkken seçtiğiniz oyunun, videonun, belgenin ya da programın ekran görüntüsü alınır ve yazısı bilgisayarınızda
   okunur. Ekran görüntüsü hiçbir yere gönderilmez.
 - **Normal programların yazısı:** Ayarlar penceresi, menü ve düğme yazıları Windows'un erişilebilirlik arayüzünden (UI Automation)
-  okunur. Bu yazılar **hiçbir ayarda bilgisayarınızdan çıkmaz**; her zaman bilgisayarınızda çevrilir.
+  okunur. Bu yazılar **hiçbir ayarda bilgisayarınızdan çıkmaz**; her zaman bilgisayarınızda çevrilir ve çeviri belleğine
+  yazılmaz.
+- **Ekrandan oku (Ctrl+F6):** fareyle seçtiğiniz kutunun yazısı yalnız o an bilgisayarınızda çevrilir; **hiçbir ayarda internete
+  gitmez, diske (çeviri belleğine) yazılmaz**, ortak sözlüğe girmez.
+- **Windows bildirimleri, arama, kilit ekranı ve oturum açma ekranı okunmaz** (mesaj önizlemesi, aranan sözcük, son dosyalar
+  gibi kişisel yazı taşırlar).
 - **Mesajlaşma programları okunmaz:** Discord, WhatsApp, Telegram, Signal, Slack, Teams, Outlook, Thunderbird, Skype, Zoom,
   Messenger, Viber, WeChat, LINE, yapay zekâ sohbet uygulamaları gibi kişisel yazı içeren programlar hiç okunmaz.
 - **Ses (sesli özellikler açıksa):** Oyun ya da video sesi bilgisayarınızda yazıya çevrilir. Ses kaydı dışarı gönderilmez.
@@ -71,8 +76,7 @@ bağlantının ağ bilgisini (IP adresinin ilk üç hanesi) yalnız tek yönlü 
 kendisini, tarayıcı / program bilgisini ve başka bağlantı bilgisini saklamaz**; amaç aynı kişinin bir yazıyı birden çok kez
 saymasını önlemektir. Bir çeviri, en az 3 ayrı kurulumdan ve 3 ayrı
 ağdan aynı gelirse ortak sözlüğe girer ve herkesin programına günde bir kez iner. Barındırma sağlayıcısının (Google Cloud)
-kendi istek kaydı, kapatılana kadar bağlantının IP adresini ve program bilgisini en çok 30 gün tutar; bu kayıt yalnız teknik
-işletim içindir ve sözlükle birleştirilmez.
+sözlük sunucusu için kendi istek kaydı da kapalıdır.
 
 ### 3.4 Güncelleme, dil modeli, lisans
 - Program güncellemesi ve dil modeli indirmesi: yalnız indirme yapılır; yazınız gönderilmez.
@@ -92,7 +96,7 @@ tek bulunamayabilir; paylaşımı kapatmak gönderimi hemen durdurur. Program 13
 
 # Live Translation (Canlı Çeviri) — Privacy Policy
 
-Version 2026-11-05 · Publisher: **Uygun Yazılım** · Contact: [GitHub support page](https://github.com/bedrihanozdogan3-svg/canli-ceviri/issues)
+Version 2026-11-05.2 · Publisher: **Uygun Yazılım** · Contact: [GitHub support page](https://github.com/bedrihanozdogan3-svg/canli-ceviri/issues)
 
 This explains what the program reads on your computer, what it stores, and what leaves your computer. If this text changes,
 the program asks for your consent again at start-up.
@@ -101,7 +105,10 @@ the program asks for your consent again at start-up.
 - **Screen:** while translation is on, screenshots of the game, video, document or program you chose are read **on your
   computer**. Screenshots are never sent anywhere.
 - **Text of regular programs** (settings windows, menus, buttons) is read through Windows UI Automation and **never leaves your
-  computer in any setting**.
+  computer in any setting** and is not stored in the translation memory.
+- **Read from screen (Ctrl+F6):** the text of the box you draw is translated once on your computer; it **never goes online
+  and is never written to disk** (translation memory) or to the shared dictionary.
+- **Windows notifications, search, lock screen and sign-in screen are never read.**
 - **Messaging apps are never read** (Discord, WhatsApp, Telegram, Signal, Slack, Teams, Outlook, Thunderbird, Skype, Zoom,
   Messenger, Viber, WeChat, LINE, AI chat apps and similar).
 - **Audio** (if voice features are on) is transcribed on your computer and never sent.
@@ -131,8 +138,7 @@ screens per game) so known screens are translated instantly; and the program's l
   itself, the browser / program details or other connection data. Basis: this is not consent-based processing of personal
   data; the data is non-identifying usage data (game menu texts and translations) and can be turned off at any time.
   A translation enters the shared dictionary only when it arrives identically from at least 3 installs and 3 networks.
-  Until it is switched off, the hosting provider's (Google Cloud) own request log keeps the IP address and program details for
-  at most 30 days, for technical operation only, never joined with the dictionary.
+  The hosting provider's (Google Cloud) own request log for the dictionary server is switched off too.
 - **Updates, language models, licence:** downloads only. Licence activation (non-store sales, once) sends your licence key
   and computer name to Lemon Squeezy; on Steam, ownership is checked by Steam. The Chrome extension talks only to the
   program on this computer (127.0.0.1). Dubbing (spoken translation of videos) is not in this version; when added,
