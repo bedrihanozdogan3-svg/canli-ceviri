@@ -2,13 +2,14 @@
 title: Kullanım Şartları — Canlı Çeviri
 ---
 
-<!-- surum: 2026-11-05 -->
+<!-- surum: 2026-11-06 -->
 # Canlı Çeviri — Kullanım Şartları
 
-Sürüm 2026-11-05 · Yayımcı: **Uygun Yazılım** · İletişim: **zeynepuygun.339@gmail.com**
+Sürüm 2026-11-06 · Yayımcı: **Uygun Yazılım** · İletişim: **zeynepuygun.339@gmail.com**
 
 Programı kurarak ya da ilk açılışta "Kabul ediyorum"u seçerek bu şartları ve **Gizlilik Politikası**'nı (GIZLILIK.md) kabul
-etmiş olursunuz. Kabul etmezseniz program çalışmaz; satın aldığınız yerin iade kurallarına göre iade isteyebilirsiniz.
+etmiş olursunuz. Kabul etmezseniz program çalışmaz. İade kuralı 9. bölümdedir (Steam ve Microsoft Store'dan alınan
+sürümde o mağazanın kuralları geçerlidir).
 
 ## 1. Lisans
 - Satın alma size programı **kişisel kullanım** için kullanma hakkı verir; programın mülkiyeti yayımcıda kalır.
@@ -39,6 +40,10 @@ Program güncellenebilir; güncellemeler bu şartlara tabidir. İnternet kullan�
 Program açık kaynak bileşenler içerir; her birinin lisansı kendi dosyasıyla birlikte gelir. Başlıcaları: Python (PSF Lisansı),
 OPUS-MT çeviri modelleri (Helsinki-NLP, CC BY 4.0), Argos Translate modelleri, CTranslate2 (MIT), PaddleOCR / RapidOCR
 (Apache 2.0), ONNX Runtime (MIT), OpenCV (Apache 2.0). Çeviri servisi MyMemory (Translated srl) kendi koşullarıyla çalışır.
+LGPL lisanslı bileşenler değiştirilmeden, ayrı dosya olarak gelir: python-bidi, GEOS (shapely içinde), OpenCV'nin FFmpeg
+eklentisi (opencv_videoio_ffmpeg, LGPL 3). Kaynak kodları kendi proje sayfalarındadır (pypi.org/project/python-bidi,
+libgeos.org, ffmpeg.org); bu dosyaları uyumlu sürümleriyle değiştirebilirsiniz. certifi MPL 2.0 lisanslıdır; kaynağı
+programla birlikte gelir.
 
 ## 6. Sorumluluk
 Program "olduğu gibi" sunulur. Yürürlükteki kanunların izin verdiği ölçüde yayımcı; çeviri hatalarından, programın
@@ -52,14 +57,25 @@ Bu şartlara aykırı kullanımda lisans sona erer. Programı kaldırarak istedi
 Şartlar değişirse program açılışta yeniden onayınızı ister. Bu şartlara Türkiye Cumhuriyeti kanunları uygulanır; tüketici
 uyuşmazlıklarında kanunun gösterdiği tüketici hakem heyetleri ve mahkemeler yetkilidir.
 
+## 9. İade ve cayma hakkı
+- Canlı Çeviri, satın aldıktan hemen sonra indirme bağlantısı ve lisans anahtarıyla teslim edilen dijital bir programdır.
+  Mesafeli Sözleşmeler Yönetmeliği'ne göre tüketiciye anında teslim edilen dijital içerikte (gayrimaddi mal) cayma hakkı
+  kullanılamaz. Bu yüzden "vazgeçtim" ya da "beğenmedim" iadesi yoktur. Bu kural satın almadan önce ürün sayfasında da
+  yazılıdır. Satın almadan önce sistem gereksinimlerine bakın.
+- **Program bilgisayarınızda çalışmazsa iade edilir.** Sipariş numaranızı ve sorunu **zeynepuygun.339@gmail.com**
+  adresine yazın. Önce sorunu sizinle birlikte çözmeye çalışırız. Yazdığınız günden sonraki 7 gün içinde çözülemezse
+  ödediğiniz bedel iade edilir ve lisans anahtarı kapatılır.
+- Steam ve Microsoft Store'dan alınan sürümde o mağazanın iade kuralları geçerlidir.
+- Ayıplı mal ve hizmetle ilgili olanlar başta olmak üzere, tüketici olarak kanundan doğan haklarınız saklıdır.
+
 ---
 
 # Live Translation (Canlı Çeviri) — Terms of Use
 
-Version 2026-11-05 · Publisher: **Uygun Yazılım** · Contact: **zeynepuygun.339@gmail.com**
+Version 2026-11-06 · Publisher: **Uygun Yazılım** · Contact: **zeynepuygun.339@gmail.com**
 
 By installing the program or choosing "I accept" at first start you accept these terms and the **Privacy Policy**. If you do
-not accept, the program does not run; you may request a refund under the rules of the store you bought it from.
+not accept, the program does not run. Refunds: see section 9 (Steam / Microsoft Store copies follow that store's rules).
 
 1. **Licence.** Purchase grants a personal-use licence; ownership stays with the publisher. The Steam version is tied to your
    Steam account. A licence-key copy can be active on up to **3 computers** and can be moved. You may not copy, distribute,
@@ -82,3 +98,11 @@ not accept, the program does not run; you may request a refund under the rules o
 7. **Termination.** The licence ends on breach of these terms. You may stop using the program at any time by uninstalling it.
 8. **Changes and law.** If the terms change, the program asks for consent again. These terms are governed by the laws of the
    Republic of Türkiye, without prejudice to mandatory consumer protection in your country.
+9. **Refunds and right of withdrawal.** Canlı Çeviri is digital software delivered immediately after purchase (download
+   link and licence key). Under the Turkish distance-contract rules, and where the law of your country allows, the right of
+   withdrawal does not apply to digital content delivered immediately; there are no "changed my mind" refunds. This rule is
+   shown on the product page before purchase.
+   **If the program does not work on your computer, you get a refund**: write
+   to zeynepuygun.339@gmail.com with your order number and the problem. We first try to solve it with you; if it is not
+   solved within 7 days of your message, your payment is refunded and the licence key is switched off. Steam / Microsoft
+   Store copies follow that store's refund rules. Your statutory consumer rights are not affected.
