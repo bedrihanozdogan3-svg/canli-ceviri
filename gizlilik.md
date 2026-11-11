@@ -2,10 +2,10 @@
 title: Gizlilik Politikası — Canlı Çeviri
 ---
 
-<!-- surum: 2026-11-11 -->
+<!-- surum: 2026-11-11-2 -->
 # Canlı Çeviri — Gizlilik Politikası
 
-Sürüm 2026-11-11 · Yayımcı: **Uygun Yazılım** · İletişim: **zeynepuygun.339@gmail.com**
+Sürüm 2026-11-11-2 · Yayımcı: **Uygun Yazılım** · İletişim: **zeynepuygun.339@gmail.com**
 
 Bu metin Canlı Çeviri programının bilgisayarınızda neyi okuduğunu, neyi sakladığını ve neyin bilgisayarınızdan çıktığını anlatır.
 Programın davranışı bu metinle sınırlıdır; metin değişirse program açılışta yeniden onayınızı ister.
@@ -47,9 +47,11 @@ Deneme kaydı dışında hepsi program klasöründeki `veri` klasöründedir; pr
 ## 3. Bilgisayarınızdan ne çıkar
 
 ### 3.1 "Çeviri: yalnız yerel model (internetsiz)" ayarı (varsayılan)
-Program bu ayarla gelir; internet çevirisi ve ortak sözlük paylaşımı **kapalıdır** ve ancak siz panelden açıp, ne
-gönderileceğini anlatan izin penceresinde "Evet" derseniz açılır.
-Bu ayarda **hiçbir yazı bilgisayarınızdan çıkmaz**: çeviri servisine istek, ortak sözlük gönderimi ya da indirmesi yapılmaz.
+Program bu ayarla gelir; internet çevirisi (MyMemory) ve ortak sözlük paylaşımı **kapalıdır**; ikisi de ayrı ayrı,
+ancak siz panelden açıp ne gönderileceğini anlatan izin penceresinde "Evet" derseniz açılır.
+Bu ayarda çeviri servisine (MyMemory) **hiçbir yazı gönderilmez**. Ortak sözlük paylaşımı bu ayardan bağımsızdır:
+paylaşımı açmadıysanız ortak sözlük gönderimi ya da indirmesi de yapılmaz ve **hiçbir yazı bilgisayarınızdan
+çıkmaz**; açtıysanız yalnız 3.3'te sayılanlar gider.
 Yalnız siz istediğinizde program güncellemesi ve dil modeli indirmesi, bir de anahtarla alınan sürümde lisans
 doğrulaması yapılır (3.4).
 
@@ -67,10 +69,14 @@ doğrulaması yapılır (3.4).
 ### 3.3 Ortak sözlük (oyun çevirilerinin paylaşımı)
 Amaç: oyun menülerinin çevirisini bütün kullanıcılar için düzeltmek. **Paylaşım varsayılan olarak kapalıdır.** Panelin Oyun
 sekmesindeki "Paylaşımı aç" ile, ne gönderileceğini anlatan izin penceresinde "Evet" derseniz açılır; "Paylaşımı kapat" ile
-istediğiniz an kapatırsınız. Ortak sözlük de yalnız paylaşım açıkken indirilir.
+istediğiniz an kapatırsınız. Paylaşım çeviri ayarından bağımsızdır: "Yalnız yerel model" ayarında da çalışır,
+internet çevirisini (MyMemory) açmaz.
+**Paylaşan yararlanır:** öteki kullanıcıların paylaştığı çeviriler (ortak sözlük) yalnız paylaşım açıkken indirilir ve
+kullanılır. Paylaşımı açmayan ortak sözlüğü almaz; program onun için de tam çalışır, çeviri bilgisayarında yapılır
+ve programın onun bilgisayarında öğrendikleri (çeviri belleği, kendi düzeltmeleri) onda kalır.
 Dayanak: sizin açık izniniz. Aşağıda sayılan veri kimliğinizi taşımayan kullanım verisidir (oyun menüsü yazıları ve
-çevirileri). Kapatınca henüz gönderilmemiş kayıtlar bilgisayarınızdan silinir ve
-bir daha hiçbir şey gönderilmez. "Yalnız yerel model" ayarında paylaşım da yapılmaz.
+çevirileri). Kapatınca henüz gönderilmemiş kayıtlar ve indirilmiş ortak sözlük bilgisayarınızdan silinir; bir daha
+hiçbir şey gönderilmez ya da indirilmez. Yeniden açarsanız ortak sözlük yeniden iner.
 
 Gönderilen (yalnız **oyun** penceresinden; tarayıcı, mesajlaşma ve normal programlardan hiçbir şey):
 - Oyunun dosya adı (örneğin `game.exe`).
@@ -157,7 +163,7 @@ Telefon uygulaması (Google Play) için iletişim ve 4. maddedeki istekler: **be
 
 # Live Translation (Canlı Çeviri) — Privacy Policy
 
-Version 2026-11-11 · Publisher: **Uygun Yazılım** · Contact: **zeynepuygun.339@gmail.com**
+Version 2026-11-11-2 · Publisher: **Uygun Yazılım** · Contact: **zeynepuygun.339@gmail.com**
 
 This explains what the program reads on your computer, what it stores, and what leaves your computer. If this text changes,
 the program asks for your consent again at start-up.
@@ -187,7 +193,9 @@ also kept in `%LOCALAPPDATA%\UygunYazilim\CanliCeviri` and the Windows registry 
 is not removed on uninstall, so reinstalling does not reset the trial; it holds no personal data and never leaves your computer.
 
 ## 3. What leaves your computer
-- **"Local model only (offline)" setting (default):** no text leaves your computer — no translation service, no shared dictionary. Only
+- **"Local model only (offline)" setting (default):** no text is sent to the translation service (MyMemory). The
+  shared dictionary is separate: if you have not turned on sharing, nothing is sent or downloaded for it either and
+  no text leaves your computer; if you have, only what is listed under "Shared dictionary" is sent. Only
   updates and language-model downloads you start, and the licence check of key-activated copies (every start in the first 10 days, then monthly).
 - **"Local first, improved online" and "Internet only" settings (off by default; turned on only if you answer "Yes" in
   the permission window that states what is sent):** when local translation is weak or no local model exists for a language, the
@@ -197,7 +205,12 @@ is not removed on uninstall, so reinstalling does not reset the trial; it holds 
   version**.
 - **Shared dictionary:** **sharing is off by default.** It is turned on with "Turn on sharing" on the Oyun (Game) tab of
   the panel only if you answer "Yes" in the permission window that states what is sent; "Turn off sharing" turns it off
-  at any time and also deletes records not yet sent. The shared dictionary is downloaded only while sharing is on. Sent only from **game** windows: the game's file name; short menu / UI
+  at any time and also deletes records not yet sent and the downloaded shared dictionary (it is downloaded again if
+  you turn sharing back on). Sharing is independent of the translation setting: it also works with "Local model
+  only" and does not turn on internet translation (MyMemory). **Those who share benefit:** translations shared by
+  other users (the shared dictionary) are downloaded and used only while sharing is on; without sharing the program
+  still works fully, translating on your computer, and what it learns on your computer (translation memory, your
+  corrections) stays with you. Sent only from **game** windows: the game's file name; short menu / UI
   text and its translation (max 6 words, English letters only; no numbers, e-mail / addresses, chat lines or player names;
   only translations made by the program's own model — **games' own official translations are never shared**; nothing
   is sent while the target language is not Turkish, since the shared dictionary is Turkish);
@@ -205,8 +218,7 @@ is not removed on uninstall, so reinstalling does not reset the trial; it holds 
   image); a random install number generated on your computer (to count distinct installs; not linked to you). Never sent:
   your name, e-mail, accounts, messages, chats, screenshots, audio, files. Our server (Google Cloud, Belgium) stores the
   install number and the network (first three parts of the IP address) only as salted one-way hashes — never the IP address
-  itself, the browser / program details or other connection data. Basis: this is not consent-based processing of personal
-  data; the data is non-identifying usage data (game menu texts and translations) and can be turned off at any time.
+  itself, the browser / program details or other connection data. Basis: your explicit permission; the data is non-identifying usage data (game menu texts and translations).
   A translation enters the shared dictionary only when it arrives identically from at least 3 installs and 3 networks.
   The hosting provider's (Google Cloud) own request log for the dictionary server is switched off too.
 - **Updates, language models, licence:** downloads only. Licence (non-store sales): on activation, at every start in the first 10 days after it, then once a month (so that a
