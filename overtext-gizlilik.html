@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OverText — Gizlilik politikası</title>
+<style>
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;max-width:760px;margin:24px auto;padding:0 16px;line-height:1.55;color:#1d1d1f;background:#fff}
+h1{font-size:1.6em;margin-bottom:.2em}h2{font-size:1.15em;margin-top:1.6em}li{margin:8px 0}
+.kunye{color:#555;font-size:.95em}a{color:#0b57d0}
+</style>
+</head>
+<body>
+<p><a href="en/overtext-privacy.html">English</a></p>
+<h1>OverText (Android) — Gizlilik politikası</h1>
+<p class="kunye">Geliştirici: Uygun Yazılım · Uygulama kimliği: <code>com.uygunyazilim.overtext</code><br>
+İletişim ve veri silme istekleri: <a href="mailto:bedrihanozdogan3@gmail.com">bedrihanozdogan3@gmail.com</a><br>
+Son güncelleme: 11 Kasım 2026</p>
+
+<p>OverText, telefon ekranındaki yazıyı okuyup çevirisini yazının yerine koyar. Ekran okuma ve çeviri yalnız telefonda yapılır;
+ekran görüntüsü ve okunan yazı hiçbir yere gönderilmez.</p>
+
+<h2>Açıklama penceresi ve izin</h2>
+<ul>
+<li>Uygulama ilk açılışta ne okunduğunu, neyin telefonda kaldığını ve neyin internete gittiğini anlatan bir açıklama penceresi
+gösterir. Kabul etmezseniz ekran okunmaz.</li>
+<li>Kabul ederseniz Android ekran paylaşımı izni ister; paylaşım sürdükçe telefon bunu bildirim çubuğunda gösterir. Bildirimdeki
+<b>Durdur</b> düğmesiyle istediğiniz an kapatabilirsiniz.</li>
+</ul>
+
+<h2>Ne okur</h2>
+<ul>
+<li>Ekranın görüntüsü yalnız siz kenardaki <b>Çevir</b> düğmesine dokunduğunuzda ya da <b>Sürekli</b> kip açıkken alınır.
+Yazı telefonda okunur; ekran görüntüsü kaydedilmez, hiçbir yere gönderilmez.</li>
+<li>Kopya korumalı ekranlar (Netflix, banka uygulamaları gibi) telefonun kuralıyla siyah gelir ve okunmaz.</li>
+<li>Bu sürümde uygulama hangi uygulamanın açık olduğuna bakmaz: mesajlaşma uygulamasındayken düğmeye dokunursanız ya da Sürekli
+kip açıksa o ekran da okunur ve çevrilir. Bu da telefonda kalır, dışarı gitmez.</li>
+</ul>
+
+<h2>Çeviri telefonda yapılır</h2>
+<ul>
+<li>İngilizceden Türkçeye çeviriyi, uygulamayla birlikte gelen kendi çeviri modelimiz telefonda yapar. Öteki diller Google'ın
+ML Kit bileşeniyle, yine telefonda çevrilir. Okunan yazı internete gönderilmez.</li>
+</ul>
+
+<h2>İnternet</h2>
+<ul>
+<li>Yalnız ilk kullanımda dil paketi ve ML Kit'in kendi çalışma ayarları Google sunucularından indirilir. Bu isteklerde ekran
+görüntüsü ve okunan yazı gönderilmez. Google indirme sırasında telefonun ağ adresini, indirme için gereken teknik bilgiyi
+(uygulama ve bileşen sürümü gibi) ve ML Kit'in bu kuruluma verdiği rastgele bir kimliği görür (kişiyi ya da telefonu tanımak
+için değildir); bunlar Google'ın kendi gizlilik koşullarına tabidir.</li>
+<li>Kullanım istatistiği kapalı: ML Kit normalde Google'a kimliksiz kullanım istatistiği (cihaz modeli, uygulama adı, süre,
+dil; okunan yazı değil) gönderir. OverText'te bu gönderim kapatılmıştır.</li>
+<li>Reklam, analiz ya da izleme aracı yoktur. Hesap açılmaz, kişisel bilgi istenmez.</li>
+</ul>
+
+<h2>Telefonda ne kalır</h2>
+<p>Hepsi uygulamanın telefondaki kendi klasöründedir; başka uygulamalar erişemez.</p>
+<ul>
+<li>İndirilen dil paketleri ve seçtiğiniz çeviri dili.</li>
+<li><b>Çeviri belleği:</b> aynı yazıyı yeniden çevirmemek için okunan yazılar ve çevirileri. En çok 5.000 kayıt tutulur, en
+eskisi silinir.</li>
+<li><b>Ekran hafızası:</b> görülmüş bir ekrana (menü, envanter, harita) dönülünce çeviriyi hemen koymak için tutulur. İçinde o
+ekranın kaba gri bir izi (ekranın her 40 × 40 noktalık parçası için 16 tonluk tek bir parlaklık değeri; görüntü değildir, yazı
+okunamaz), o ekranda okunan yazılar, yerleri ve çevirileri bulunur. En çok 300 ekran tutulur, en az kullanılan silinir.</li>
+<li>Çeviri belleği ve ekran hafızası uygulama kapanırken dosyaya yazılır, açılınca okunur. Ekran görüntüsünün kendisi diske
+yazılmaz.</li>
+<li>Uygulamanın kendi günlüğüne yalnız sayı ve durum yazılır (kaç yazı okundu gibi; okunan yazı yazılmaz). Günlük 1 MB'ı geçince
+bir önceki günlük silinir.</li>
+<li>Google'ın çeviri bileşeni çevirdiği cümleyi telefonun kendi sistem günlüğüne yazar. Bu günlük telefonda kalır, OverText onu
+dışarı göndermez.</li>
+<li><b>Hiçbiri telefondan çıkmaz:</b> OverText bu dosyaları hiçbir yere göndermez. Dosyalar Android'in bulut yedeğine ve yeni
+telefona aktarmaya da girmez; ikisi de uygulamada kapalıdır.</li>
+</ul>
+
+<h2>Verilerin silinmesi</h2>
+<ul>
+<li>Telefonun Ayarlar → Uygulamalar → OverText → Depolama → Verileri sil adımlarını izleyin ya da uygulamayı kaldırın. İkisi de
+yukarıdakilerin hepsini siler.</li>
+<li>Bizde sizin hakkınızda tutulan bir veri yoktur. Sorularınız ve istekleriniz için:
+<a href="mailto:bedrihanozdogan3@gmail.com">bedrihanozdogan3@gmail.com</a>.</li>
+</ul>
+
+<h2>Çocuklar</h2>
+<p>Uygulama 13 yaş altı çocuklara yönelik değildir ve kimseden kişisel bilgi toplamaz.</p>
+
+<h2>Değişiklikler</h2>
+<p>Bu politika değişirse yeni hâli bu sayfada, güncelleme tarihiyle yayımlanır.</p>
+</body>
+</html>

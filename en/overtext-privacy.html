@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OverText — Privacy policy</title>
+<style>
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;max-width:760px;margin:24px auto;padding:0 16px;line-height:1.55;color:#1d1d1f;background:#fff}
+h1{font-size:1.6em;margin-bottom:.2em}h2{font-size:1.15em;margin-top:1.6em}li{margin:8px 0}
+.kunye{color:#555;font-size:.95em}a{color:#0b57d0}
+</style>
+</head>
+<body>
+<p><a href="../overtext-gizlilik.html">Türkçe</a></p>
+<h1>OverText (Android) — Privacy policy</h1>
+<p class="kunye">Developer: Uygun Yazılım · App ID: <code>com.uygunyazilim.overtext</code><br>
+Contact and data deletion requests: <a href="mailto:bedrihanozdogan3@gmail.com">bedrihanozdogan3@gmail.com</a><br>
+Last updated: 11 November 2026</p>
+
+<p>OverText reads the text on your phone screen and puts its translation in place of the original. Screen reading and
+translation happen only on the phone; screenshots and the text read are never sent anywhere.</p>
+
+<h2>Disclosure and permission</h2>
+<ul>
+<li>On first launch the app shows a disclosure explaining what is read, what stays on the phone and what goes to the internet.
+If you do not accept, the screen is not read.</li>
+<li>If you accept, Android asks for the screen sharing permission; while sharing is on, the phone shows it in the status bar.
+You can stop it at any time with the <b>Stop</b> button in the notification.</li>
+</ul>
+
+<h2>What it reads</h2>
+<ul>
+<li>A screenshot is taken only when you tap the <b>Çevir</b> (Translate) button at the edge of the screen or while
+<b>Sürekli</b> (Continuous) mode is on. Text is read on the phone; screenshots are never saved or sent anywhere.</li>
+<li>Copy-protected screens (Netflix, banking apps and similar) come through black by the phone's own rule and are not read.</li>
+<li>In this version the app does not check which app is open: if you tap the button in a messaging app, or Continuous mode is
+on there, that screen is read and translated too. This also stays on the phone.</li>
+</ul>
+
+<h2>Translation happens on the phone</h2>
+<ul>
+<li>English-to-Turkish translation is done on the phone by our own translation model, which comes with the app. Other languages
+are translated with Google's ML Kit component, also on the phone. No text is sent online.</li>
+</ul>
+
+<h2>Internet</h2>
+<ul>
+<li>Only on first use, the language pack and ML Kit's own working settings are downloaded from Google's servers. No screenshot
+or read text is sent in these requests. Google sees the phone's network address, the technical details the download needs
+(such as app and component version) and a random identifier ML Kit gives this installation (not meant to identify you or the
+phone); these fall under Google's own privacy terms.</li>
+<li>Usage statistics are off: ML Kit normally sends Google anonymous usage statistics (device model, app name, duration,
+language; not the read text). This sending is switched off in OverText.</li>
+<li>There are no ads, analytics or tracking tools. No account is created and no personal information is asked for.</li>
+</ul>
+
+<h2>What stays on the phone</h2>
+<p>Everything below is in the app's own folder on the phone, which other apps cannot access.</p>
+<ul>
+<li>Downloaded language packs and your chosen target language.</li>
+<li><b>Translation memory:</b> texts read and their translations, so the same text is not translated again. At most 5,000 entries
+are kept; the oldest is deleted.</li>
+<li><b>Screen memory:</b> kept so that when you return to a screen you have seen (menu, inventory, map) the translation appears at
+once. It holds a coarse grey trace of that screen (one 16-level brightness value for each 40 × 40-pixel patch; not an image,
+text cannot be read), the texts read on it, their positions and translations. At most 300 screens are kept; the least used is
+deleted.</li>
+<li>The translation memory and screen memory are written to a file when the app closes and read when it opens. Screenshots
+themselves are never written to disk.</li>
+<li>The app's own log holds only numbers and status (such as how many texts were read; never the read text). When it passes 1 MB,
+the previous log is deleted.</li>
+<li>Google's translation component writes the sentence it translates to the phone's own system log. That log stays on the phone
+and OverText never sends it anywhere.</li>
+<li><b>None of this leaves the phone:</b> OverText sends none of these files anywhere. They are also excluded from Android's cloud
+backup and from transfer to a new phone; both are switched off in the app.</li>
+</ul>
+
+<h2>Deleting your data</h2>
+<ul>
+<li>Go to the phone's Settings → Apps → OverText → Storage → Clear data, or uninstall the app. Either one deletes all of the
+above.</li>
+<li>We hold no data about you. For questions and requests:
+<a href="mailto:bedrihanozdogan3@gmail.com">bedrihanozdogan3@gmail.com</a>.</li>
+</ul>
+
+<h2>Children</h2>
+<p>The app is not directed at children under 13 and collects no personal information from anyone.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version is published on this page with its update date.</p>
+</body>
+</html>
